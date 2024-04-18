@@ -9,7 +9,6 @@ export interface ExperienceProps {
     company: string;
     dateStarted: Date;
     dateEnded: Date;
-    technologies: string[]; // Assuming technologies are strings
     images: (StaticImageData)[]; // Assuming images are URLs as strings
     points: string[];
   }

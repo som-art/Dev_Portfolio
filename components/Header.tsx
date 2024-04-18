@@ -50,6 +50,7 @@ function Header({}: Props) {
             network="email" 
             fgColor="rgb(168 162 158)" 
             bgColor="transparent"
+            onClick={() => window.location.href = 'mailto:dassomosree59@gmail.com'}
         />
         <p className="hidden xl:inline-flex text-sm text-stone-400">Get in Touch</p>
         </motion.div>

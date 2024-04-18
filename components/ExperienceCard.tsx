@@ -8,7 +8,7 @@ type Props = { job: Job };
 
 const ExperienceCard = ({ job }: Props) => {
   return (
-    <article className="flex flex-col rounded-lg items-left h-full space-y-8 flex-shrink-0 w-[300px] md:w-[600px] xl:w-[900px] snap-center bg-gray-800 p-10 hover:opacity-100 
+    <article className="flex flex-col rounded-lg items-left h-full space-y-8 flex-shrink-0 w-[300px] md:w-[600px] xl:w-[1000px] snap-center bg-gray-800 p-6 md:p-10 hover:opacity-100 
     opacity-40 cursor-pointer transition-opacity duration-150 overflow-hidden">
       <div className="px-0 md:px-10 ">
         
@@ -30,7 +30,7 @@ const ExperienceCard = ({ job }: Props) => {
           {new Date(job.dateEnded).toDateString()}
         </p>
       </div>
-      <ul className="px-0 md:px-10 list-disc space-y-2 pr-5 text-justify ml-0 text-sm md:text-base pl-5 overflow-y-hidden">
+      <ul className="px-0 md:px-10 list-disc space-y-1 md:space-y-2 pr-5 text-justify ml-0 text-sm md:text-base pl-5 overflow-y-hidden">
         {job.points.map((point, index) => (
           <li key={index}>{point}</li>
         ))}
