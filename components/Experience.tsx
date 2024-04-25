@@ -2,9 +2,9 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import ExperienceCard from './ExperienceCard';
 import { Job } from '@/props/props_Experience'; // Assuming this is the correct path for the Job type
-import htmlicon from '../images/htmlicon.png';
+import htmlicon from '../images/htmlicon.jpg';
 import reacticon from '../images/reacticon.png';
-import cssicon from '../images/cssicon.png';
+import cssicon from '../images/cssicon.jpg';
 import tailwindicon from '../images/tailwindicon.png';
 import photoshopicon from '../images/photoshopicon.png';
 import premiereproicon from '../images/premiereproicon.png';
