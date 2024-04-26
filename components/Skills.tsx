@@ -84,13 +84,13 @@ function Skills({}: Props) {
       transition={{ duration: 2 }}
       className="min-h-screen flex relative flex-col text-center md:text-left xl:flex-row max-w-7xl xl:px-10 
       justify-center xl:space-y-0 mx-auto items-center">
-        <h3 className="absolute top-20 md:top-24 uppercase tracking-[20px] text-gray-500 text-xl md:text-2xl">
+        <h3 className="absolute top-12 md:top-24 uppercase tracking-[20px] text-gray-500 text-xl md:text-2xl">
             Skills
         </h3>
-        <h3 className="absolute top-36 uppercase tracking-[6px] text-gray-500 text-sm">
+        <h3 className="absolute top-20 md:top-36 uppercase tracking-[6px] text-gray-500 text-sm">
             Hover over a skill to see current proficiency
         </h3>
-        <div className="grid grid-cols-4 gap-7 pt-24">
+        <div className="grid grid-cols-4 gap-7 pt-0 xl:pt-24">
         {skills?.slice(0, 4).map((skill) => (
           <Skill key={skill.id} skill={skill} />
         ))}
