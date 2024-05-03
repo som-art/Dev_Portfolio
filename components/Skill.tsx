@@ -1,13 +1,13 @@
-import React from 'react'
-import { motion } from 'framer-motion'
-import htmlicon from '../images/htmlicon.png'
-import { SkillSet } from '@/props/props_Skill'
+import React from "react";
+import { motion } from "framer-motion";
+import htmlicon from "../images/htmlicon.png";
+import { SkillSet } from "@/props/props_Skill";
 type Props = {
-  directionLeft?: boolean,
-  skill: SkillSet
-}
+  directionLeft?: boolean;
+  skill: SkillSet;
+};
 
-function Skill({skill, directionLeft}: Props) {
+function Skill({ skill, directionLeft }: Props) {
   return (
     <div className="group relative flex cursor-pointer">
       <motion.img
@@ -26,7 +26,7 @@ function Skill({skill, directionLeft}: Props) {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Skill
+export default Skill;

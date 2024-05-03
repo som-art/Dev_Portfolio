@@ -1,11 +1,11 @@
-import React from 'react'
-import { motion } from 'framer-motion'
-type Props = {}
+import React from "react";
+import { motion } from "framer-motion";
+type Props = {};
 
 function BackgroundCircles({}: Props) {
   return (
-    <motion.div 
-    initial={{
+    <motion.div
+      initial={{
         opacity: 0,
       }}
       animate={{
@@ -16,8 +16,9 @@ function BackgroundCircles({}: Props) {
       transition={{
         duration: 1.7,
       }}
-    className="relative flex justify-center items-center">
-       <div
+      className="relative flex justify-center items-center"
+    >
+      <div
         className="absolute border border-stone-400 opacity-30 rounded-full h-[200px] w-[200px] mt-64
             animate-ping"
       />
@@ -43,7 +44,7 @@ function BackgroundCircles({}: Props) {
       />
       <div />
     </motion.div>
-  )
+  );
 }
 
-export default BackgroundCircles
+export default BackgroundCircles;
