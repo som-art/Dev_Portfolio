@@ -65,7 +65,7 @@ const About = (props: Props) => {
           </span>
         </h4>
         <p className="text-sm md:text-lg lg:text-lg text-justify">
-          I am a computer science graduate pursuing a Master's degree with a
+          I am a computer science graduate pursuing a Masters degree with a
           focus on UX/UI design and full-stack web development. My experience
           includes collaborating with design teams to improve user interfaces,
           designing dynamic and browser-compatible web pages using HTML5, CSS3,
