@@ -8,7 +8,11 @@ import tailwindicon from "../images/tailwindicon.png";
 import jsicon from "../images/jsicon.png";
 import mongoicon from "../images/mongoicon.png";
 import nodeicon from "../images/nodeicon.png";
-import { LinkIcon } from "@heroicons/react/24/solid";
+import {
+  LinkIcon,
+  ArrowRightIcon,
+  ArrowLeftIcon,
+} from "@heroicons/react/24/solid";
 
 type Props = {};
 
@@ -65,11 +69,11 @@ const Projects = (props: Props) => {
       <h3 className="absolute top-14 md:top-14 uppercase tracking-[20px] text-gray-500 text-xl md:text-2xl">
         Projects
       </h3>
-      <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 mt-20 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-purple-500/80">
-        {projects.map((project) => (
-          <div className="w-full flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-10 md:p-36 h-screen">
+      <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 mt-14 lg:mt-24 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-purple-500/80">
+        {projects.map((project, index) => (
+          <div className="w-full flex-shrink-0 snap-center flex flex-col space-y-3 items-center justify-center p-10 md:p-36 h-screen">
             <motion.img
-              initial={{ x: -100, opacity: 0 }}
+              initial={{ x: -200, opacity: 0 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 2 }}
               viewport={{ once: true }}
@@ -78,7 +82,7 @@ const Projects = (props: Props) => {
               alt=""
             />
 
-            <div className="space-y-3 md:space-y-4 px-0 md:px-2 max-w-7xl">
+            <div className="space-y-2 md:space-y-3 px-0 md:px-2 max-w-7xl">
               <h4 className=" text-base md:text-md lg:text-xl font-semibold text-center">
                 <span className="inline relative">
                   {" "}
@@ -113,7 +117,15 @@ const Projects = (props: Props) => {
                 ))}
               </div>
 
-              <p className=" text-sm text-justify ">{project.summary}</p>
+              <div className="flex items-center space-x-3 justify-between">
+                {index !== 0 && (
+                  <ArrowLeftIcon className="text-white h-14 w-14 animate-pulse" />
+                )}
+                <p className="text-sm text-justify">{project.summary}</p>
+                {index !== projects.length - 1 && (
+                  <ArrowRightIcon className="text-white h-14 w-14 animate-pulse" />
+                )}
+              </div>
 
               <div className="flex items-center space-x-3 justify-left ">
                 <LinkIcon className="text-white h-5 w-5 animate-pulse" />

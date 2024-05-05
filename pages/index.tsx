@@ -6,13 +6,14 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Experience from "@/components/Experience";
-//import Skills from "@/components/Skills";
-//import Projects from "@/components/Projects";
+import Skills from "@/components/Skills";
+import Projects from "@/components/Projects";
+import ContactMe from "@/components/ContactMe";
 import React, { Suspense } from "react";
-const Skills = React.lazy(() => import("@/components/Skills"));
-const Projects = React.lazy(() => import("@/components/Projects"));
-const ContactMe = React.lazy(() => import("@/components/ContactMe"));
-const inter = Inter({ subsets: ["latin"] });
+// const Skills = React.lazy(() => import("@/components/Skills"));
+// const Projects = React.lazy(() => import("@/components/Projects"));
+// const ContactMe = React.lazy(() => import("@/components/ContactMe"));
+//const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (

@@ -27,7 +27,6 @@ function Hero({}: Props) {
           priority
           src={profilePic}
           alt="Picture of Somosree Das"
-          layout="fill"
           style={{
             objectFit: "cover",
             borderRadius: "100px",

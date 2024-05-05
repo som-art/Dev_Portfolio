@@ -32,13 +32,13 @@ const About = (props: Props) => {
         md:rounded-lg md:w-50 md:h-64 "
       >
         <Image
-          priority
           src={profilePic}
           alt="Picture of Somosree Das"
           layout="fill"
           style={{
             objectFit: "cover",
           }}
+          sizes="(max-width: 640px) 100vw, 640px"
           className="rounded-full md:rounded-lg"
         />
       </motion.div>
